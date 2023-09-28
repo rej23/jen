@@ -1,12 +1,13 @@
 pipeline{
     agent any
     stages{
-        stage{('Make directory"){
-            steps{sh ls
+        stage('Make directory'){
+            steps{
+                sh "ls"
             }
         }
     
-        stage{("make files")
+        stage("make files"){
             steps {
                 sh "ls"
                 }
@@ -18,4 +19,4 @@ pipeline{
             }
         }
     }
-}
+
